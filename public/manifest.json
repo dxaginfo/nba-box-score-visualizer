@@ -1,5 +1,5 @@
 {
-  "short_name": "NBA Visualizer",
+  "short_name": "Box Score Viz",
   "name": "NBA Box Score Visualizer",
   "icons": [
     {
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0077BE",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }

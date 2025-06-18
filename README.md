@@ -1,146 +1,95 @@
 # NBA Box Score Visualizer
 
-![NBA Box Score Visualizer Logo](https://via.placeholder.com/800x200/0077be/ffffff?text=NBA+Box+Score+Visualizer)
+A modern, interactive basketball statistics visualization platform built with React, TypeScript, and D3.js.
 
 ## Overview
 
-The NBA Box Score Visualizer is an interactive web application that transforms traditional box score data into insightful, customizable visualizations. This tool helps basketball fans, analysts, and coaches gain deeper insights from game statistics through intuitive charts, comparative analysis, and AI-powered statistical interpretations.
+The NBA Box Score Visualizer is a web application designed to transform traditional basketball box scores into interactive, engaging visualizations. The app helps basketball fans, analysts, and coaches to quickly understand game dynamics and player performance through intuitive charts and graphs.
 
 ## Features
 
-### Core Functionality
+- **Game Summary Dashboard**: Visualizes team statistics, scoring runs, and game flow
+- **Player Performance Cards**: Interactive player stat cards with shooting charts and efficiency metrics
+- **Team Comparison Visualizations**: Side-by-side team statistical breakdowns
+- **Filtering & Customization**: Adjust time periods, player groups, and visualization styles
+- **Responsive Design**: Optimized for both desktop and mobile viewing
 
-- **Game Selection**: Browse and select from recent NBA games or search for specific matchups by team, date, or season
-- **Box Score Display**: View comprehensive box score statistics for teams and individual players
-- **Real-time Updates**: Auto-refresh capabilities for live game data (when available)
+## Technologies Used
 
-### Data Visualization
+- **Frontend**: React with TypeScript for type safety
+- **State Management**: React Context API and hooks
+- **Visualization**: D3.js for custom data visualizations
+- **Styling**: Tailwind CSS for responsive design
+- **Data Handling**: Custom fetch hooks with TypeScript interfaces
 
-- **Shot Charts**: Interactive shot location maps showing makes/misses and shooting percentages
-- **Performance Graphs**: Visualize key statistics with customizable charts and graphs
-- **Player Comparison**: Side-by-side statistical comparison between multiple players
-- **Team Comparison**: Compare team performance across various statistical categories
-- **Historical Context**: Place current performances in historical context with trend analysis
-- **Performance Trends**: Track and analyze player statistics over time with interactive trend visualization
-
-### Advanced Analytics
-
-- **Efficiency Metrics**: Advanced statistics including PER, true shooting percentage, and usage rate
-- **Statistical Breakdowns**: Quarter-by-quarter and clutch time performance analysis
-- **AI-Generated Insights**: Natural language summaries highlighting key performances and trends
-- **Anomaly Detection**: Identification of statistically significant outlier performances
-- **Multi-player Trend Analysis**: Compare performance trends of up to 5 players across various statistical categories
-
-### User Experience
-
-- **Customizable Dashboard**: Personalize the visualization layout and metrics displayed
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Data Export**: Download visualizations and data in multiple formats (PNG, CSV, PDF)
-- **Sharing Capabilities**: Share custom visualizations via direct links or social media
-- **Flexible Time Ranges**: Analyze performance over custom time periods and game counts
-
-## Technology Stack
-
-### Frontend
-- React.js with TypeScript
-- Tailwind CSS for styling
-- Chart.js and D3.js for data visualization
-- React Router for navigation
-
-### Backend
-- Node.js with Express
-- API integration with basketball data providers
-- OpenAI integration for natural language insights
-
-### Data Sources
-- NBA Stats API (or similar free/public basketball data API)
-- Historical statistics database
-
-## Setup and Installation
+## Getting Started
 
 ### Prerequisites
-- Node.js (v14.0.0 or higher)
-- npm (v6.0.0 or higher)
 
-### Installation Steps
+- Node.js (v14 or higher)
+- npm or yarn
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/dxaginfo/nba-box-score-visualizer.git
-   cd nba-box-score-visualizer
-   ```
+### Installation
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/dxaginfo/nba-box-score-visualizer.git
 
-3. Set up environment variables:
-   - Create a `.env` file in the root directory
-   - Add necessary API keys and configuration variables
+# Navigate to the project directory
+cd nba-box-score-visualizer
 
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+# Install dependencies
+npm install
 
-5. Open your browser and navigate to `http://localhost:3000`
-
-## Project Structure
-
-```
-nba-box-score-visualizer/
-├── public/             # Static files
-├── src/                # Source files
-│   ├── components/     # React components
-│   │   ├── layout/     # Layout components
-│   │   ├── pages/      # Page components
-│   │   ├── ui/         # Reusable UI components
-│   │   └── visualizations/ # Data visualization components
-│   ├── hooks/          # Custom React hooks
-│   ├── services/       # API and data services
-│   ├── types/          # TypeScript type definitions
-│   ├── utils/          # Utility functions
-│   ├── App.tsx         # Main App component
-│   └── index.tsx       # Entry point
-├── .env                # Environment variables
-├── package.json        # Project dependencies
-├── tsconfig.json       # TypeScript configuration
-└── README.md           # Project documentation
+# Start the development server
+npm start
 ```
 
-## New Features in Latest Update
+## Application Structure
 
-### Performance Trends Page
-The latest addition to NBA Box Score Visualizer introduces a comprehensive Player Performance Trends analysis feature that allows users to:
+```
+├── public/               # Static files
+├── src/                  # Source code
+│   ├── components/       # React components
+│   │   ├── BoxScore/     # Box score related components
+│   │   ├── Charts/       # Visualization components
+│   │   ├── Players/      # Player related components
+│   │   ├── Teams/        # Team related components
+│   │   └── UI/           # Reusable UI components
+│   ├── contexts/         # React contexts for state management
+│   ├── hooks/            # Custom React hooks
+│   ├── interfaces/       # TypeScript interfaces
+│   ├── services/         # API services
+│   ├── utils/            # Utility functions
+│   ├── App.tsx           # Main App component
+│   └── index.tsx         # Application entry point
+└── tsconfig.json         # TypeScript configuration
+```
 
-- Track statistics for up to 5 players simultaneously
-- Visualize performance trends over the last 5, 10, 15, or 20 games
-- Compare trends across different statistical categories (points, rebounds, assists, etc.)
-- Identify performance patterns, hot/cold streaks, and statistical anomalies
-- Generate insights on player consistency and improvement
+## Usage Examples
 
-This powerful tool helps coaches, analysts, and fans understand player development and make data-driven predictions about future performance.
+### Viewing Game Statistics
 
-## Contributing
+1. Select a game from the available fixtures
+2. View the game summary dashboard for high-level insights
+3. Drill down into individual player performances
+4. Toggle between different visualization types
+5. Filter statistics by quarters or time periods
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Development Roadmap
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- **Phase 1**: Core visualization components and game summary dashboard ✅
+- **Phase 2**: Player performance cards and shooting charts
+- **Phase 3**: Advanced filtering options and team comparison tools
+- **Phase 4**: User accounts and saved preferences
+- **Phase 5**: Historical data integration and trend analysis
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License
 
 ## Acknowledgments
 
-- NBA for providing the statistical data
-- The open-source community for the amazing tools and libraries
-
----
-
-Developed with ❤️ for basketball fans and data enthusiasts everywhere.
+- NBA data sources and APIs
+- Open-source visualization libraries and tools
+- Basketball analytics community
