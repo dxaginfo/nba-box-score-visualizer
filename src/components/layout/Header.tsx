@@ -12,10 +12,11 @@ const Header: React.FC = () => {
               <span>NBA Box Score Visualizer</span>
             </Link>
           </div>
-          <nav className="flex space-x-6">
+          <nav className="flex flex-wrap gap-4 md:gap-6">
             <Link to="/" className="hover:text-gray-300 transition-colors">Home</Link>
             <Link to="/player-comparison" className="hover:text-gray-300 transition-colors">Player Comparison</Link>
             <Link to="/team-comparison" className="hover:text-gray-300 transition-colors">Team Comparison</Link>
+            <Link to="/performance-trends" className="hover:text-gray-300 transition-colors">Performance Trends</Link>
           </nav>
         </div>
       </div>
