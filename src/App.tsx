@@ -6,6 +6,7 @@ import HomePage from './components/pages/HomePage';
 import GamePage from './components/pages/GamePage';
 import PlayerComparisonPage from './components/pages/PlayerComparisonPage';
 import TeamComparisonPage from './components/pages/TeamComparisonPage';
+import PerformanceTrendsPage from './components/pages/PerformanceTrendsPage';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/game/:gameId" element={<GamePage />} />
             <Route path="/player-comparison" element={<PlayerComparisonPage />} />
             <Route path="/team-comparison" element={<TeamComparisonPage />} />
+            <Route path="/performance-trends" element={<PerformanceTrendsPage />} />
           </Routes>
         </main>
         <Footer />
