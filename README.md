@@ -21,6 +21,7 @@ The NBA Box Score Visualizer is an interactive web application that transforms t
 - **Player Comparison**: Side-by-side statistical comparison between multiple players
 - **Team Comparison**: Compare team performance across various statistical categories
 - **Historical Context**: Place current performances in historical context with trend analysis
+- **Performance Trends**: Track and analyze player statistics over time with interactive trend visualization
 
 ### Advanced Analytics
 
@@ -28,6 +29,7 @@ The NBA Box Score Visualizer is an interactive web application that transforms t
 - **Statistical Breakdowns**: Quarter-by-quarter and clutch time performance analysis
 - **AI-Generated Insights**: Natural language summaries highlighting key performances and trends
 - **Anomaly Detection**: Identification of statistically significant outlier performances
+- **Multi-player Trend Analysis**: Compare performance trends of up to 5 players across various statistical categories
 
 ### User Experience
 
@@ -35,6 +37,7 @@ The NBA Box Score Visualizer is an interactive web application that transforms t
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Data Export**: Download visualizations and data in multiple formats (PNG, CSV, PDF)
 - **Sharing Capabilities**: Share custom visualizations via direct links or social media
+- **Flexible Time Ranges**: Analyze performance over custom time periods and game counts
 
 ## Technology Stack
 
@@ -87,20 +90,37 @@ The NBA Box Score Visualizer is an interactive web application that transforms t
 
 ```
 nba-box-score-visualizer/
-├── public/               # Static files
-├── src/                  # Source files
-│   ├── components/       # React components
-│   ├── hooks/            # Custom React hooks
-│   ├── services/         # API and data services
-│   ├── types/            # TypeScript type definitions
-│   ├── utils/            # Utility functions
-│   ├── App.tsx           # Main App component
-│   └── index.tsx         # Entry point
-├── .env                  # Environment variables
-├── package.json          # Project dependencies
-├── tsconfig.json         # TypeScript configuration
-└── README.md             # Project documentation
+├── public/             # Static files
+├── src/                # Source files
+│   ├── components/     # React components
+│   │   ├── layout/     # Layout components
+│   │   ├── pages/      # Page components
+│   │   ├── ui/         # Reusable UI components
+│   │   └── visualizations/ # Data visualization components
+│   ├── hooks/          # Custom React hooks
+│   ├── services/       # API and data services
+│   ├── types/          # TypeScript type definitions
+│   ├── utils/          # Utility functions
+│   ├── App.tsx         # Main App component
+│   └── index.tsx       # Entry point
+├── .env                # Environment variables
+├── package.json        # Project dependencies
+├── tsconfig.json       # TypeScript configuration
+└── README.md           # Project documentation
 ```
+
+## New Features in Latest Update
+
+### Performance Trends Page
+The latest addition to NBA Box Score Visualizer introduces a comprehensive Player Performance Trends analysis feature that allows users to:
+
+- Track statistics for up to 5 players simultaneously
+- Visualize performance trends over the last 5, 10, 15, or 20 games
+- Compare trends across different statistical categories (points, rebounds, assists, etc.)
+- Identify performance patterns, hot/cold streaks, and statistical anomalies
+- Generate insights on player consistency and improvement
+
+This powerful tool helps coaches, analysts, and fans understand player development and make data-driven predictions about future performance.
 
 ## Contributing
 
