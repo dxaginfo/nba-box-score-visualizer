@@ -1,0 +1,29 @@
+/* Custom classes beyond Tailwind */
+
+.stat-card {
+  @apply bg-white rounded-xl shadow-card p-4 transition-transform duration-200 hover:shadow-elevated hover:scale-102;
+}
+
+.btn-primary {
+  @apply bg-primary text-white font-medium py-2 px-4 rounded-lg transition-colors hover:bg-opacity-90;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white font-medium py-2 px-4 rounded-lg transition-colors hover:bg-opacity-90;
+}
+
+.btn-outline {
+  @apply border border-primary text-primary font-medium py-2 px-4 rounded-lg transition-colors hover:bg-primary hover:bg-opacity-10;
+}
+
+.chart-container {
+  @apply w-full h-64 md:h-80 lg:h-96;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4 text-darkGray;
+}
+
+.subsection-title {
+  @apply text-xl font-semibold mb-3 text-darkGray;
+}
